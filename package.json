@@ -1,0 +1,57 @@
+{
+  "name": "@bybrave/async-retry2",
+  "version": "2.0.0",
+  "description": "Maintained async-retry fork: zero runtime dependencies, ESM + CommonJS, built-in TypeScript types, bail actually stops retries, AbortSignal + shouldRetry support. Drop-in for async-retry.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "dist/"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node --test",
+    "test-types": "tsc --strict --noEmit --moduleResolution bundler --target es2020 --lib es2020,dom --types node test/types.ts",
+    "prepublishOnly": "npm run build && npm test && npm run test-types"
+  },
+  "keywords": [
+    "async",
+    "retry",
+    "retries",
+    "promise",
+    "backoff",
+    "esm",
+    "typescript"
+  ],
+  "author": "bybrave",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bybraveHQ/async-retry2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bybraveHQ/async-retry2/issues"
+  },
+  "homepage": "https://github.com/bybraveHQ/async-retry2#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
