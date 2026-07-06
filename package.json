@@ -1,6 +1,6 @@
 {
   "name": "@bybrave/async-retry2",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Maintained async-retry fork: zero runtime dependencies, ESM + CommonJS, built-in TypeScript types, bail actually stops retries, AbortSignal + shouldRetry support. Drop-in for async-retry.",
   "type": "module",
   "main": "./dist/index.cjs",

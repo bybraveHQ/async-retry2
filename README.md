@@ -74,6 +74,15 @@ Drop-in — replace the import:
 
 The retry/backoff behaviour is unchanged. The one intentional behaviour change is [#69](https://github.com/vercel/async-retry/issues/69): after you call `bail()`, the function is no longer retried (this is what most people already expected).
 
+## Support
+
+If this package saves you time, you can support maintenance:
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/bybrave)
+[![Bitcoin](https://img.shields.io/badge/Bitcoin-BTC-F7931A?logo=bitcoin&logoColor=white)](#support)
+
+Bitcoin (BTC): `bc1q37557q5jpeaxqydzwvf3jgj7zhnfpn2td3q40q`
+
 ## License
 
 MIT. Copyright © Vercel, Inc.; vendored node-retry © Tim Koschützki, Felix Geisendörfer; fork © bybrave.
